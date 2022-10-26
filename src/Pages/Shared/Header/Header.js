@@ -26,23 +26,36 @@ const Header = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-compact dropdown-content mt-3 p-2 shadow  rounded-box w-52"
+              className="menu menu-compact bg-[#b47bc3] dropdown-content mt-3 p-2 shadow  rounded-box w-52"
             >
               <li>
-                <Link className="text-lg font-medium">Home</Link>
+                <Link to="/" className="text-lg font-medium">
+                  Home
+                </Link>
               </li>
               <li>
-                <Link className="text-lg font-medium">Courses</Link>
+                <Link to="/courses" className="text-lg font-medium">
+                  Courses
+                </Link>
               </li>
               <li>
-                <Link className="text-lg font-medium">FAQ</Link>
+                <Link to="/FAQ" className="text-lg font-medium">
+                  FAQ
+                </Link>
               </li>
               <li>
-                <Link className="text-lg font-medium">Blog</Link>
+                <Link to="/blog" className="text-lg font-medium">
+                  Blog
+                </Link>
               </li>
               <li>
-                <Link className="btn flex lg:hidden bg-sky-700 border-0 text-white">
+                <Link className="btn flex lg:hidden bg-transparent border-2 border-purple-900 text-black hover:text-white hover:bg-fuchsia-900 hover:border-0 mb-2">
                   Log in
+                </Link>
+              </li>
+              <li>
+                <Link className="btn flex lg:hidden bg-transparent border-2 border-purple-900 text-black hover:text-white hover:bg-fuchsia-900 hover:border-0 hover:mr-2">
+                  Register
                 </Link>
               </li>
             </ul>
@@ -94,8 +107,18 @@ const Header = () => {
               </li>
             </ul>
           </div>
-          <Link className="btn hidden lg:flex mr-2 bg-transparent border-2 border-purple-900 text-black hover:text-white hover:bg-fuchsia-900 hover:border-0">
+          <Link
+            htmlFor="my-modal"
+            className="btn modal-button hidden lg:flex mr-2 bg-transparent border-2 border-purple-900 text-black hover:text-white hover:bg-fuchsia-900 hover:border-0"
+          >
             Log in
+          </Link>
+
+          <Link
+            to="/register"
+            className="btn hidden lg:flex mr-2 bg-transparent border-2 border-purple-900 text-black hover:text-white hover:bg-fuchsia-900 hover:border-0 hover:mr-2"
+          >
+            Register
           </Link>
           <div className="dropdown dropdown-end">
             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
