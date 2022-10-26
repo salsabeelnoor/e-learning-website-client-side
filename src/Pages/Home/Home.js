@@ -11,7 +11,8 @@ const Home = () => {
   const courses = useLoaderData();
   return (
     <div className="">
-      <section className="hero bg-cover bg-no-repeat lg:min-h-[800px] min-h-[200px]"></section>
+      {/* img  */}
+      <section className="hero bg-cover bg-no-repeat lg:min-h-[800px] min-h-[200px] "></section>
       <h1 className="mt-28 text-5xl font-semibold text-red-900 text-center">
         We Offer
       </h1>
