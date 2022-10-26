@@ -7,25 +7,27 @@ import clock from "../../assets/images/time_thumbnail.png";
 const Home = () => {
   return (
     <div className="">
-      <section className="hero"></section>
-      <section className="mx-auto container grid lg:grid-cols-3 grid-cols-1 gap-10 mt-36 border-2 border-red-600 items-center justify-items-center">
-        <div className="flex flex-col justify-center items-center w-auto border-2 border-red-600">
+      <section className="hero bg-cover bg-no-repeat lg:min-h-[800px] min-h-[200px]"></section>
+      <h1 className="mt-28 text-5xl font-semibold text-red-900">
+        Our services
+      </h1>
+      {/* service section  */}
+      <section className="mx-auto container grid lg:grid-cols-3 grid-cols-1 gap-10 my-24  items-center justify-items-center">
+        <div className="flex flex-col justify-center items-center w-auto">
           <div className="w-64 ">
             <img className="w-full" src={teacher} alt="" />
           </div>
-          <h1>Great Teachers</h1>
-          <p>
-            Effective & passionate teachers that will help you ace your class
-            and dominate that standardize test.
-          </p>
+          <div className="w-full text-center mt-5">
+            <h1 className="font-bold text-2xl text-pink-900">Great Teachers</h1>
+            <p className="text-base text-gray-500 pt-1">
+              Effective & passionate teachers that will help you ace your class
+              and dominate that standardize test.
+            </p>
+          </div>
         </div>
-        <div className="flex flex-col justify-center items-center w-auto border-2 border-blue-600">
+        <div className="flex flex-col justify-center items-center w-auto">
           <div className="w-64">
-            <img
-              className="w-full border-2 border-green-600 "
-              src={clock}
-              alt=""
-            />
+            <img className="w-full" src={clock} alt="" />
           </div>
           <div className="w-full text-center mt-5">
             <h1 className="font-bold text-2xl text-pink-900">Available 24/7</h1>
@@ -35,19 +37,19 @@ const Home = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center w-auto border-2 border-red-600">
+        <div className="flex flex-col justify-center items-center w-auto">
           <div>
-            <img
-              className="w-[150px] border-2 border-red-600"
-              src={unlimited}
-              alt=""
-            />
+            <img className="w-[150px]" src={unlimited} alt="" />
           </div>
-          <h1>Unlimited Access</h1>
-          <p>
-            Best of all, you get unlimited access to all out 100+ courses so you
-            can learn what you want at your own place
-          </p>
+          <div className="w-full text-center mt-5">
+            <h1 className="font-bold text-2xl text-pink-900">
+              Unlimited Access
+            </h1>
+            <p className="text-base text-gray-500 pt-1">
+              Best of all, you get unlimited access to all out 100+ courses so
+              you can learn what you want at your own place
+            </p>
+          </div>
         </div>
       </section>
     </div>
