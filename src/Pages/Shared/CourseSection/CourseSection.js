@@ -2,7 +2,6 @@ import React from "react";
 
 const CourseSection = ({ course }) => {
   const {
-    course_id,
     course_title,
     course_duration,
     course_details,

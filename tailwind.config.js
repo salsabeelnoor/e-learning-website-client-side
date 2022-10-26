@@ -2,7 +2,12 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      gridTemplateColumns: {
+        layout: "1fr 4fr",
+        mobile_layout: "1fr",
+      },
+    },
   },
   plugins: [require("daisyui")],
   daisyui: {
