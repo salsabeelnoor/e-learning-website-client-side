@@ -1,7 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const CourseSection = ({ course }) => {
   const {
+    course_id,
     course_title,
     course_duration,
     course_details,
@@ -27,9 +29,12 @@ const CourseSection = ({ course }) => {
             )}
           </p>
           <div className="card-actions justify-center w-full mb-0">
-            <button className="btn w-full mb-0 bg-transparent text-gray-800 text-lg normal-case hover:text-white hover:bg-fuchsia-900">
-              See Details
-            </button>
+            <Link
+              className="btn w-full mb-0 bg-transparent text-gray-800 text-lg normal-case hover:text-white hover:bg-fuchsia-900"
+              to={`/courses/${course_id}`}
+            >
+              <button className="">See Details</button>
+            </Link>
           </div>
         </div>
       </div>

@@ -57,7 +57,7 @@ const Footer = () => {
         <div className="flex items-center justify-center h-auto lg:pb-0 pb-3">
           <div className="border-sky-700 border-l-2 p-6">
             <div className="flex flex-col w-1/5">
-              <Link to="/" className="mb-2">
+              <Link to="https://www.facebook.com/" className="mb-2">
                 <FaFacebook className="h-7 w-7"></FaFacebook>
               </Link>
               <Link to="/" className="mb-2">
