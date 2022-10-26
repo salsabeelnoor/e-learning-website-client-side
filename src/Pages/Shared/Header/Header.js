@@ -4,7 +4,7 @@ import logo from "../../../assets/images/e-symbol.png";
 
 const Header = () => {
   return (
-    <div className="bg-[#91a3b9]">
+    <div className="bg-[#b47bc3]">
       <div className="navbar px-10">
         <div className="navbar-start">
           <div className="dropdown">

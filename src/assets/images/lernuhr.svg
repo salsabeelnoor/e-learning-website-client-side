@@ -1,0 +1,399 @@
+<?xml version="1.0"?>
+<svg
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:cc="http://creativecommons.org/ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    xmlns:ns1="http://sozi.baierouge.fr"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    id="svg2"
+    viewBox="0 0 379.61 380.11"
+    version="1.1"
+  >
+  <title
+      id="title6964"
+    >Lernuhr</title
+  >
+  <g
+      id="layer1"
+      transform="translate(-9.9139 -4.9059)"
+    >
+    <g
+        id="g6844"
+        transform="translate(16.996 -320.1)"
+      >
+      <g
+          id="g6802"
+          transform="translate(-87.215 -1.8768)"
+        >
+        <g
+            id="g5064"
+            transform="translate(-75.785 141.15)"
+          >
+          <g
+              id="g4998"
+              transform="matrix(1.8192 0 0 1.7992 -167.38 -149.26)"
+            >
+            <g
+                id="g4975"
+                stroke-linecap="round"
+                fill="none"
+              >
+              <path
+                  id="path3801"
+                  stroke="#8a8a8a"
+                  stroke-width="1.1625"
+                  d="m353.04 291.54c0 25.68-13.498 49.409-35.408 62.249-21.911 12.84-48.906 12.84-70.816 0s-35.41-36.57-35.41-62.25 13.498-49.409 35.408-62.249c21.911-12.84 48.906-12.84 70.816 0 21.911 12.84 35.408 36.569 35.408 62.249"
+              />
+              <path
+                  id="path4973"
+                  stroke="#000"
+                  stroke-width="3.5433"
+                  d="m358.36 291.66s-22.359-0.36703-22.359-0.36703"
+              />
+              <path
+                  id="path4971"
+                  stroke="#000"
+                  stroke-width="3.5433"
+                  d="m348.38 329.61l-19.608-10.75"
+              />
+              <path
+                  id="path4969"
+                  stroke="#000"
+                  stroke-width="3.5433"
+                  d="m320.69 357.97l-11.621-19.105"
+              />
+              <path
+                  id="path4967"
+                  stroke="#000"
+                  stroke-width="3.5433"
+                  d="m282.41 368.53l-0.36662-22.359"
+              />
+              <path
+                  id="path4965"
+                  stroke="#000"
+                  stroke-width="3.5433"
+                  d="m243.76 357.97l11.621-19.105"
+              />
+              <path
+                  id="path4963"
+                  stroke="#000"
+                  stroke-width="3.5433"
+                  d="m216.07 329.61l19.608-10.75"
+              />
+              <path
+                  id="path4961"
+                  stroke="#000"
+                  stroke-width="3.5433"
+                  d="m206.09 291.66s22.359-0.36703 22.359-0.36703"
+              />
+              <path
+                  id="path4959"
+                  stroke="#000"
+                  stroke-width="3.5433"
+                  d="m216.07 253.34l19.608 10.75"
+              />
+              <path
+                  id="path4957"
+                  stroke="#000"
+                  stroke-width="3.5433"
+                  d="m243.76 224.98l11.621 19.105"
+              />
+              <path
+                  id="path4955"
+                  stroke="#000"
+                  stroke-width="3.5433"
+                  d="m282.04 214.42l0.36663 22.359"
+              />
+              <path
+                  id="path4953"
+                  stroke="#000"
+                  stroke-width="3.5433"
+                  d="m320.69 224.98l-11.621 19.105"
+              />
+              <path
+                  id="path4890"
+                  stroke="#000"
+                  stroke-width="3.5433"
+                  d="m348.38 253.34l-19.608 10.75"
+              />
+              <path
+                  id="path4892"
+                  stroke="#02f"
+                  stroke-width="1.7431"
+                  d="m351.24 298.83l-15.868-1.8261m3.1124 35.636l-12.905-9.4121m-15.007 32.429l-6.4042-14.633m-29.3 20.367l1.8302-15.868m-35.514 2.6519l9.6222-12.749m-32.075-15.572l14.679-6.297m-20.21-29.44l15.868 1.8261m-3.1124-35.636l12.905 9.4121m15.007-32.429l6.4042 14.633m29.3-20.367l-1.8302 15.867m35.514-2.6519l-9.6222 12.749m32.075 15.572l-14.679 6.297"
+              />
+              <path
+                  id="path4894"
+                  stroke="#02f"
+                  stroke-width="1.7431"
+                  d="m348.26 313.07l-15.217-4.855m-4.1934 35.332l-10.835-11.736m-21.276 28.418l-3.3852-15.61m-32.718 13.68l4.9146-15.198m-35.081-4.785l11.931-10.619m-28.079-21.703s15.615-3.3612 15.615-3.3612m-13.74-32.76l15.217 4.855m4.1934-35.332l10.835 11.736m21.276-28.418l3.3852 15.61m32.718-13.68l-4.9146 15.198m35.081 4.785l-11.931 10.619m28.079 21.703s-15.615 3.3612-15.615 3.3612"
+              />
+              <path
+                  id="path4896"
+                  stroke="#02f"
+                  stroke-width="1.7431"
+                  d="m350.12 306.02s-15.615-3.3612-15.615-3.3612m-0.548 35.676l-11.931-10.619m-18.245 30.587l-4.9146-15.198m-31.19 17.11l3.3852-15.61m-35.488-1.0884l10.835-11.736m-30.231-18.751l15.217-4.855m-17.08-31.26s15.615 3.3612 15.615 3.3612m0.54799-35.676l11.931 10.619m18.245-30.587l4.9146 15.198m31.19-17.11l-3.3852 15.61m35.488 1.0884l-10.835 11.736m30.231 18.751l-15.217 4.855"
+              />
+              <path
+                  id="path4898"
+                  stroke="#02f"
+                  stroke-width="1.7431"
+                  d="m345.71 319.86l-14.679-6.297m-7.7766 34.616l-9.6222-12.749m-24.062 25.961l-1.8302-15.867m-33.873 10.13l6.4042-14.633m-34.314-8.3866l12.905-9.4121m-25.657-24.399l15.868-1.8261m-10.33-33.9l14.679 6.297m7.7766-34.616l9.6222 12.749m24.062-25.961l1.8302 15.867m33.873-10.13l-6.4042 14.633m34.314 8.3866l-12.905 9.4121m25.657 24.399l-15.868 1.8261"
+              />
+              <path
+                  id="path4900"
+                  stroke="#000"
+                  stroke-width="1.7431"
+                  d="m342.47 326.37l-14.006-7.6786m-11.281 33.522l-8.3005-13.647m-26.585 23.224l-0.26188-15.971m-34.775 6.3934l8.3005-13.647m-33.588-12.197l14.006-7.6786m-23.16-27.12l15.971-0.26216m-6.8186-34.71l14.006 7.6786m11.281-33.522l8.3005 13.647m26.585-23.224l0.26187 15.971m34.775-6.3934l-8.3005 13.647m33.588 12.197l-14.006 7.6786m23.158 27.142l-15.971 0.26216"
+              />
+              <path
+                  id="path3801-0"
+                  stroke="#8a8a8a"
+                  stroke-width=".85888"
+                  d="m334.59 291.75c0 18.965-9.9767 36.49-26.172 45.973-16.195 9.4827-36.149 9.4827-52.344 0s-26.172-27.007-26.172-45.973c0-18.965 9.9768-36.49 26.172-45.973 16.195-9.4827 36.149-9.4827 52.344 0s26.172 27.007 26.172 45.973"
+              />
+            </g
+            >
+          </g
+          >
+        </g
+        >
+        <path
+            id="rect4996-1"
+            d="m249.26 334.86h40.739v33.653h-40.739z"
+            stroke="#f00"
+            stroke-linecap="round"
+            stroke-width="1.7802"
+            fill="none"
+        />
+        <path
+            id="rect4996-1-9"
+            d="m345.22 350.38 34.91 21.001c-3.3447 5.3461-10.316 17.039-17.348 28.837l-34.91-21.001z"
+            stroke="#f00"
+            stroke-linecap="round"
+            stroke-width="1.7802"
+            fill="none"
+        />
+        <path
+            id="rect4996-1-6"
+            d="m415.44 406.79 21.247 34.76-28.714 17.551-21.247-34.76z"
+            stroke="#f00"
+            stroke-linecap="round"
+            stroke-width="1.7802"
+            fill="none"
+        />
+        <path
+            id="rect4996-1-99"
+            d="m451.77 495.71-0.14852 40.739-33.653-0.12269 0.14852-40.739z"
+            stroke="#f00"
+            stroke-linecap="round"
+            stroke-width="1.7802"
+            fill="none"
+        />
+        <path
+            id="rect4996-1-9-1"
+            d="m176.83 635 34.91 21.001c-3.3447 5.3461-10.316 17.039-17.348 28.837l-34.91-21.001z"
+            stroke="#f00"
+            stroke-linecap="round"
+            stroke-width="1.7802"
+            fill="none"
+        />
+        <path
+            id="rect4996-1-6-1"
+            d="m129.6 573.3 21.247 34.76-28.714 17.551-21.247-34.76z"
+            stroke="#f00"
+            stroke-linecap="round"
+            stroke-width="1.7802"
+            fill="none"
+        />
+        <path
+            id="rect4996-1-0"
+            d="m250.1 665.37h40.739v33.653h-40.739z"
+            stroke="#f00"
+            stroke-linecap="round"
+            stroke-width="1.7802"
+            fill="none"
+        />
+        <path
+            id="rect4996-1-99-5"
+            d="m121.91 497.13-0.14852 40.739-33.653-0.12269 0.14852-40.739z"
+            stroke="#f00"
+            stroke-linecap="round"
+            stroke-width="1.7802"
+            fill="none"
+        />
+        <path
+            id="rect4996-1-9-2"
+            d="m345.83 684.48 34.91-21.001c-3.3447-5.3461-10.316-17.039-17.348-28.837l-34.91 21.001z"
+            stroke="#f00"
+            stroke-linecap="round"
+            stroke-width="1.7802"
+            fill="none"
+        />
+        <path
+            id="rect4996-1-6-6"
+            d="m417.04 625.97 21.247-34.76-28.714-17.551-21.247 34.76z"
+            stroke="#f00"
+            stroke-linecap="round"
+            stroke-width="1.7802"
+            fill="none"
+        />
+        <path
+            id="rect4996-1-6-6-7"
+            d="m131.37 459.8 21.24-34.76-28.71-17.55-21.25 34.76z"
+            stroke="#f00"
+            stroke-linecap="round"
+            stroke-width="1.7802"
+            fill="none"
+        />
+        <path
+            id="rect4996-1-9-2-0"
+            d="m176.48 399.87 34.91-21.001c-3.3447-5.3461-10.316-17.039-17.348-28.837l-34.91 21.001z"
+            stroke="#f00"
+            stroke-linecap="round"
+            stroke-width="1.7802"
+            fill="none"
+        />
+      </g
+      >
+      <path
+          id="path6842"
+          d="m187.03 514.25c0 2.3431-1.8995 4.2426-4.2426 4.2426-2.3432 0-4.2426-1.8995-4.2426-4.2426 0-2.3432 1.8995-4.2426 4.2426-4.2426 2.3432 0 4.2426 1.8995 4.2426 4.2426z"
+          transform="matrix(1.7273 0 0 1.7273 -132.96 -373.73)"
+          stroke="#8a8a8a"
+          stroke-linecap="round"
+          stroke-width="1.7717"
+          fill="none"
+      />
+    </g
+    >
+    <path
+        stroke-width="10.63"
+        stroke="#009"
+        stroke-linecap="round"
+        d="m199.27 71.257v124.19"
+        fill="none"
+    />
+    <path
+        stroke-width="14.173"
+        stroke="#f00"
+        stroke-linecap="round"
+        d="m198.27 194.95-76.116 44.067"
+        fill="none"
+    />
+  </g
+  >
+  <metadata
+    >
+    <rdf:RDF
+      >
+      <cc:Work
+        >
+        <dc:format
+          >image/svg+xml</dc:format
+        >
+        <dc:type
+            rdf:resource="http://purl.org/dc/dcmitype/StillImage"
+        />
+        <cc:license
+            rdf:resource="http://creativecommons.org/licenses/publicdomain/"
+        />
+        <dc:publisher
+          >
+          <cc:Agent
+              rdf:about="http://openclipart.org/"
+            >
+            <dc:title
+              >Openclipart</dc:title
+            >
+          </cc:Agent
+          >
+        </dc:publisher
+        >
+        <dc:title
+          >Learning Clock 1</dc:title
+        >
+        <dc:date
+          >2013-10-21T15:21:01</dc:date
+        >
+        <dc:description
+          >Clock template to learn the time.</dc:description
+        >
+        <dc:source
+          >https://openclipart.org/detail/185272/learning-clock-1-by-frankes-185272</dc:source
+        >
+        <dc:creator
+          >
+          <cc:Agent
+            >
+            <dc:title
+              >frankes</dc:title
+            >
+          </cc:Agent
+          >
+        </dc:creator
+        >
+        <dc:subject
+          >
+          <rdf:Bag
+            >
+            <rdf:li
+              >clock</rdf:li
+            >
+            <rdf:li
+              >education</rdf:li
+            >
+            <rdf:li
+              >lernen</rdf:li
+            >
+            <rdf:li
+              >lerning</rdf:li
+            >
+            <rdf:li
+              >school</rdf:li
+            >
+            <rdf:li
+              >schule</rdf:li
+            >
+            <rdf:li
+              >time</rdf:li
+            >
+            <rdf:li
+              >uhr</rdf:li
+            >
+            <rdf:li
+              >unterricht</rdf:li
+            >
+            <rdf:li
+              >zeit</rdf:li
+            >
+          </rdf:Bag
+          >
+        </dc:subject
+        >
+      </cc:Work
+      >
+      <cc:License
+          rdf:about="http://creativecommons.org/licenses/publicdomain/"
+        >
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Reproduction"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Distribution"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#DerivativeWorks"
+        />
+      </cc:License
+      >
+    </rdf:RDF
+    >
+  </metadata
+  >
+</svg
+>
