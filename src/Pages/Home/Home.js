@@ -3,14 +3,16 @@ import "./Home.css";
 import teacher from "../../assets/images/teacher2.png";
 import unlimited from "../../assets/images/infinity.png";
 import clock from "../../assets/images/time_thumbnail.png";
+import { useLoaderData } from "react-router-dom";
+import CourseSection from "../Shared/CourseSection/CourseSection";
 
 const Home = () => {
+  // loader
+  const courses = useLoaderData();
   return (
     <div className="">
       <section className="hero bg-cover bg-no-repeat lg:min-h-[800px] min-h-[200px]"></section>
-      <h1 className="mt-28 text-5xl font-semibold text-red-900">
-        Our services
-      </h1>
+      <h1 className="mt-28 text-5xl font-semibold text-red-900">We Offer</h1>
       {/* service section  */}
       <section className="mx-auto container grid lg:grid-cols-3 grid-cols-1 gap-10 my-24  items-center justify-items-center">
         <div className="flex flex-col justify-center items-center w-auto">
@@ -50,6 +52,20 @@ const Home = () => {
               you can learn what you want at your own place
             </p>
           </div>
+        </div>
+      </section>
+      {/* course section  */}
+      <section className="">
+        <h1 className="mt-28 text-5xl font-semibold text-red-900">
+          Our Courses
+        </h1>
+        <div className="grid lg:grid-cols-3 grid-cols-1 justify-items-center items-center gap-28 mx-auto container m-16">
+          {courses.slice(0, 3).map((course) => (
+            <CourseSection
+              key={course.course_id}
+              course={course}
+            ></CourseSection>
+          ))}
         </div>
       </section>
     </div>

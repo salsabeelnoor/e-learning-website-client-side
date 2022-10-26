@@ -94,7 +94,7 @@ const Header = () => {
               </li>
             </ul>
           </div>
-          <Link className="btn hidden lg:flex mr-2 bg-sky-700 border-0 text-white">
+          <Link className="btn hidden lg:flex mr-2 bg-transparent border-2 border-purple-900 text-black hover:text-white hover:bg-fuchsia-900 hover:border-0">
             Log in
           </Link>
           <div className="dropdown dropdown-end">
