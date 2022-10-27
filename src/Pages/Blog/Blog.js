@@ -39,7 +39,7 @@ const Blog = () => {
           <span className="text-base font-semibold py-2 block">
             The alternatives for firebase are
           </span>
-          <ul class="list-disc pl-4">
+          <ul className="list-disc pl-4">
             <li>Auth0</li>
             <li>MongoDB</li>
             <li>JSON Web Token</li>

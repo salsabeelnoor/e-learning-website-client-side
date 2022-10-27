@@ -19,7 +19,7 @@ const CourseDetails = () => {
   return (
     <div className="mx-auto container pb-9 px-4 flex flex-col justify-center items-center">
       <div className="card w-auto bg-[#e8e3ea] shadow-xl p-4 border-2 border-violet-900 my-16">
-        <div class="flex justify-end pb-3">
+        <div className="flex justify-end pb-3">
           <Pdf targetRef={ref} filename="code-example.pdf">
             {({ toPdf }) => (
               <FaFileDownload
