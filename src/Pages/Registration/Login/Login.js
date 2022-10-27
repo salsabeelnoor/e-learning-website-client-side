@@ -3,7 +3,7 @@ import React from "react";
 import { useState } from "react";
 import { useContext } from "react";
 import { FaGithub, FaGoogle } from "react-icons/fa";
-import { Navigate, useNavigate } from "react-router-dom";
+import { Link, Navigate, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../Contexts/AuthProvider/AuthProvider";
 import "../Register/Register.css";
 
@@ -11,6 +11,8 @@ const Login = () => {
   const { providerLogin, signIn } = useContext(AuthContext);
   //navigate
   const navigate = useNavigate();
+  const location = useLocation();
+  const from = location.state?.from?.pathname || "/";
   //error
   const [error, setError] = useState("");
 
@@ -26,6 +28,7 @@ const Login = () => {
       .then((result) => {
         const user = result.user;
         console.log(user);
+        navigate(from, { replace: true });
       })
       .catch((error) => console.error(error));
   };
@@ -36,6 +39,7 @@ const Login = () => {
       .then((result) => {
         const user = result.user;
         console.log(user);
+        navigate(from, { replace: true });
       })
       .catch((error) => console.error(error));
   };
@@ -52,7 +56,7 @@ const Login = () => {
         console.log(user);
         form.reset();
         setError("");
-        navigate("/");
+        navigate(from, { replace: true });
       })
       .catch((error) => {
         setError(error.message);
@@ -116,6 +120,12 @@ const Login = () => {
                 </button>
               </form>
               <div>
+                <h2 className=" text-sm  text-gray-200 mt-2 text-center">
+                  Don't have an account?{" "}
+                  <Link to="/register" className="text-blue-200">
+                    Sign Up
+                  </Link>
+                </h2>
                 <h2 className=" text-base font-medium text-gray-200 mt-3 text-center">
                   Also Log in With
                 </h2>

@@ -1,6 +1,6 @@
 import React from "react";
 import { FaFileDownload, FaStar } from "react-icons/fa";
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 
 const CourseDetails = () => {
   const courseDetail = useLoaderData();
@@ -14,7 +14,7 @@ const CourseDetails = () => {
     rating,
   } = courseDetail;
   return (
-    <div className="mx-auto container pb-9 px-4">
+    <div className="mx-auto container pb-9 px-4 flex flex-col justify-center items-center">
       <div className="card w-auto bg-[#e8e3ea] shadow-xl p-4 border-2 border-violet-900 my-16">
         <div class="flex justify-end pb-3">
           <FaFileDownload
@@ -48,9 +48,12 @@ const CourseDetails = () => {
           </h1>
         </div>
       </div>
-      <button className="btn w-2/4 mb-0 bg-transparent text-gray-800 text-lg normal-case hover:text-white hover:bg-fuchsia-900">
+      <Link
+        to="/checkout"
+        className="btn w-2/4 mb-0 bg-transparent text-gray-800 text-lg normal-case hover:text-white hover:bg-fuchsia-900 "
+      >
         CheckOut
-      </button>
+      </Link>
     </div>
   );
 };
