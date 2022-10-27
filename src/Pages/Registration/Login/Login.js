@@ -1,5 +1,6 @@
 import { GoogleAuthProvider } from "firebase/auth";
 import React from "react";
+import { useState } from "react";
 import { useContext } from "react";
 import { FaGithub, FaGoogle } from "react-icons/fa";
 import { Navigate, useNavigate } from "react-router-dom";
@@ -11,6 +12,7 @@ const Login = () => {
   //navigate
   const navigate = useNavigate();
   //error
+  const [error, setError] = useState("");
 
   //google sign in
   const googleProvider = new GoogleAuthProvider();
@@ -35,9 +37,13 @@ const Login = () => {
         const user = result.user;
         console.log(user);
         form.reset();
+        setError("");
         navigate("/");
       })
-      .catch((error) => console.error(error));
+      .catch((error) => {
+        setError(error.message);
+        console.error(error);
+      });
   };
   return (
     <div>
@@ -82,6 +88,11 @@ const Login = () => {
                     placeholder="Your Password"
                     required
                   />
+                </div>
+                <div className="mb-3">
+                  <h2 className="text-base text-red-400 text-left font-medium ">
+                    {error}
+                  </h2>
                 </div>
                 <button
                   type="submit"
