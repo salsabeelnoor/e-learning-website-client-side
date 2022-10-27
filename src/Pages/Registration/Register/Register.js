@@ -1,19 +1,21 @@
 import React from "react";
 import { useState } from "react";
 import { useContext } from "react";
+import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../Contexts/AuthProvider/AuthProvider";
 // import book_img from "../../../assets/images/book_pic.jpg";
 import "./Register.css";
 
 const Register = () => {
   const [error, setError] = useState("");
-  const { createUser } = useContext(AuthContext);
+  const { createUser, updateUserProfile } = useContext(AuthContext);
+  const navigate = useNavigate();
 
   const handleSubmit = (event) => {
     event.preventDefault();
     const form = event.target;
     const name = form.name.value;
-    const photoURL = form.email.value;
+    const photoURL = form.photoURL.value;
     const email = form.email.value;
     const password = form.password.value;
     console.log(name, photoURL, email, password);
@@ -24,11 +26,23 @@ const Register = () => {
         console.log(user);
         form.reset();
         setError("");
+        handleUpdateUserProfile(name, photoURL);
+        navigate("/");
       })
       .catch((error) => {
         setError(error.message);
         console.error(error);
       });
+  };
+
+  const handleUpdateUserProfile = (name, photoURL) => {
+    const profile = {
+      displayName: name,
+      photoURL: photoURL,
+    };
+    updateUserProfile(profile)
+      .then(() => {})
+      .catch((error) => console.error(error));
   };
 
   return (
@@ -43,10 +57,7 @@ const Register = () => {
           <div className="card-body">
             <form onSubmit={handleSubmit}>
               <div className="mb-6">
-                <label
-                  for="name"
-                  className="block mb-2 text-base font-medium text-gray-200"
-                >
+                <label className="block mb-2 text-base font-medium text-gray-200">
                   Your Name
                 </label>
                 <input
@@ -59,10 +70,7 @@ const Register = () => {
                 />
               </div>
               <div className="mb-6">
-                <label
-                  for="photoURL"
-                  className="block mb-2 text-base font-medium text-gray-200"
-                >
+                <label className="block mb-2 text-base font-medium text-gray-200">
                   Your PhotoURL
                 </label>
                 <input
@@ -74,10 +82,7 @@ const Register = () => {
                 />
               </div>
               <div className="mb-6">
-                <label
-                  for="email"
-                  className="block mb-2 text-base font-medium text-gray-200"
-                >
+                <label className="block mb-2 text-base font-medium text-gray-200">
                   Your email
                 </label>
                 <input
@@ -90,10 +95,7 @@ const Register = () => {
                 />
               </div>
               <div className="mb-6">
-                <label
-                  for="password"
-                  className="block mb-2 text-base font-medium text-gray-200"
-                >
+                <label className="block mb-2 text-base font-medium text-gray-200">
                   Your password
                 </label>
                 <input

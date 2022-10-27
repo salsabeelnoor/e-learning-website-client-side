@@ -126,7 +126,9 @@ const Header = () => {
                 <h2>
                   {user?.uid ? (
                     <>
-                      <span>{user?.displayName}</span>
+                      <span className="text-lg font-medium">
+                        {user?.displayName}
+                      </span>
                       <Link
                         onClick={handleLogOut}
                         to="/"
