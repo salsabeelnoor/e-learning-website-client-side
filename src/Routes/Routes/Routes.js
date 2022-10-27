@@ -54,12 +54,16 @@ export const routes = createBrowserRouter([
         element: <Login></Login>,
       },
       {
-        path: "/checkout",
+        path: "/checkout/:id",
         element: (
           <PrivateRoute>
             <CheckOut></CheckOut>
           </PrivateRoute>
         ),
+        loader: ({ params }) =>
+          fetch(
+            `https://e-learning-website-server.vercel.app/courses/${params.id}`
+          ),
       },
     ],
   },

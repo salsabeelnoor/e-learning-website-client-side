@@ -129,20 +129,22 @@ const Login = () => {
                 <h2 className=" text-base font-medium text-gray-200 mt-3 text-center">
                   Also Log in With
                 </h2>
-                <button
-                  onClick={handleGoogleSignIn}
-                  className="btn font-normal text-base text-white bg-transparent border-2 rounded-md border-purple-400 hover:text-white hover:bg-fuchsia-900 hover:border-2 lg:w-full w-auto px-5 py-2.5 my-5 text-center normal-case"
-                >
-                  <FaGoogle className="mr-2"></FaGoogle>
-                  <h2>Google</h2>
-                </button>
-                <button
-                  onClick={handleGitHubSignIn}
-                  className="btn font-normal text-base text-white bg-transparent border-2 rounded-md border-purple-400 hover:text-white hover:bg-fuchsia-900 hover:border-2 lg:w-full w-auto px-5 py-2.5 text-center normal-case"
-                >
-                  <FaGithub className="mr-2"></FaGithub>
-                  Github
-                </button>
+                <div className="flex flex-col">
+                  <button
+                    onClick={handleGoogleSignIn}
+                    className="btn font-normal text-base text-white bg-transparent border-2 rounded-md border-purple-400 hover:text-white hover:bg-fuchsia-900 hover:border-2 lg:w-full w-auto px-5 py-2.5 my-5 text-center normal-case"
+                  >
+                    <FaGoogle className="mr-2"></FaGoogle>
+                    <h2>Google</h2>
+                  </button>
+                  <button
+                    onClick={handleGitHubSignIn}
+                    className="btn font-normal text-base text-white bg-transparent border-2 rounded-md border-purple-400 hover:text-white hover:bg-fuchsia-900 hover:border-2 lg:w-full w-auto px-5 py-2.5 text-center normal-case"
+                  >
+                    <FaGithub className="mr-2"></FaGithub>
+                    Github
+                  </button>
+                </div>
               </div>
             </div>
           </div>

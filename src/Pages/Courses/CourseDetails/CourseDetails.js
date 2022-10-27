@@ -57,10 +57,10 @@ const CourseDetails = () => {
         </div>
       </div>
       <Link
-        to="/checkout"
-        className="btn w-2/4 mb-0 bg-transparent text-gray-800 text-lg normal-case hover:text-white hover:bg-fuchsia-900 "
+        to={`/checkout/${course_id}`}
+        className="btn w-2/4 border-purple-800 mb-0 bg-transparent text-gray-800 text-lg normal-case hover:text-white hover:bg-fuchsia-900 "
       >
-        CheckOut
+        Checkout For This Course
       </Link>
     </div>
   );
