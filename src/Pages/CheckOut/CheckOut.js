@@ -1,8 +1,10 @@
 import React from "react";
-import { Link, useLoaderData } from "react-router-dom";
+import { Link, useLoaderData, useNavigate } from "react-router-dom";
+import toast from "react-hot-toast";
 
 const CheckOut = () => {
   const courseCheckOut = useLoaderData();
+  const navigate = useNavigate();
   const {
     course_id,
     course_title,
@@ -12,6 +14,7 @@ const CheckOut = () => {
     course_price,
     rating,
   } = courseCheckOut;
+
   return (
     <div className="min-h-[800px] flex justify-center items-center flex-col mx-auto container">
       <div className=" card w-full bg-inherit border-2 shadow-lg shadow-indigo-500/30">
@@ -26,11 +29,11 @@ const CheckOut = () => {
               </label>
               <input
                 type="name"
-                value={course_id}
+                defaultValue={course_id}
                 id="name"
                 name="name"
                 className="bg-gray-50 border border-gray-300 text-gray-600 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                readonly
+                readOnly
               />
             </div>
             <div className="mb-6">
@@ -41,7 +44,7 @@ const CheckOut = () => {
                 type="name"
                 id="name"
                 name="name"
-                value={course_title}
+                defaultValue={course_title}
                 className="bg-gray-50 border border-gray-300 text-gray-600 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                 readOnly
               />
@@ -77,12 +80,14 @@ const CheckOut = () => {
               />
             </div>
             <div className="mb-3"></div>
-            <button
-              type="submit"
-              className="btn font-medium text-base normal-case text-violet-900 bg-transparent border-2 rounded-md border-purple-400 hover:text-white hover:bg-fuchsia-900 hover:border-2 w-[100px] px-5 py-2.5 text-center"
-            >
-              Submit
-            </button>
+            <Link to='/'>
+              <button
+                type="submit"
+                className="btn font-medium text-base normal-case text-violet-900 bg-transparent border-2 rounded-md border-purple-400 hover:text-white hover:bg-fuchsia-900 hover:border-2 w-[100px] px-5 py-2.5 text-center"
+              >
+                Submit
+              </button>
+            </Link>
           </form>
         </div>
       </div>

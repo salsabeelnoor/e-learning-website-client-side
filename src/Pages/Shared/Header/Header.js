@@ -160,36 +160,24 @@ const Header = () => {
           </div>
 
           <div className="dropdown dropdown-end">
-            <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-              <div className="">
-                {user?.photoURL ? (
-                  <img
-                    className="w-10 rounded-full"
-                    src={user?.photoURL}
-                    alt=""
-                  />
-                ) : (
-                  <FaUser></FaUser>
-                )}
-              </div>
-            </label>
-            <ul
-              tabIndex={0}
-              className="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52"
+            <div
+              className="tooltip hover:tooltip-open tooltip-bottom "
+              data-tip={user?.displayName}
             >
-              <li>
-                <a className="justify-between">
-                  Profile
-                  <span className="badge">New</span>
-                </a>
-              </li>
-              <li>
-                <a>Settings</a>
-              </li>
-              <li>
-                <a>Logout</a>
-              </li>
-            </ul>
+              <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                <div className="" data-tip="">
+                  {user?.photoURL ? (
+                    <img
+                      className="w-10 rounded-full"
+                      src={user?.photoURL}
+                      alt=""
+                    />
+                  ) : (
+                    <FaUser></FaUser>
+                  )}
+                </div>
+              </label>
+            </div>
           </div>
         </div>
       </div>

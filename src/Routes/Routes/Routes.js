@@ -11,6 +11,7 @@ import Register from "../../Pages/Registration/Register/Register";
 import Login from "../../Pages/Registration/Login/Login";
 import CheckOut from "../../Pages/CheckOut/CheckOut";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
+import ErrorRoute from "../../Pages/ErrorRoute/ErrorRoute";
 
 export const routes = createBrowserRouter([
   {
@@ -66,5 +67,9 @@ export const routes = createBrowserRouter([
           ),
       },
     ],
+  },
+  {
+    path: "*",
+    element: <ErrorRoute></ErrorRoute>,
   },
 ]);

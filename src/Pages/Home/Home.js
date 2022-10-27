@@ -9,6 +9,10 @@ import CourseSection from "../Shared/CourseSection/CourseSection";
 const Home = () => {
   // loader
   const courses = useLoaderData();
+  // if (this.props.location.state.showToast) {
+  //   //show toast
+  //   showToast
+  // }
   return (
     <div className="">
       {/* img  */}
