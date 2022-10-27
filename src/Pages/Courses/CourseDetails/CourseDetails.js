@@ -1,6 +1,7 @@
 import React from "react";
 import { FaFileDownload, FaStar } from "react-icons/fa";
 import { Link, useLoaderData } from "react-router-dom";
+import Pdf from "react-to-pdf";
 
 const CourseDetails = () => {
   const courseDetail = useLoaderData();
@@ -13,19 +14,26 @@ const CourseDetails = () => {
     course_price,
     rating,
   } = courseDetail;
+
+  const ref = React.createRef();
   return (
     <div className="mx-auto container pb-9 px-4 flex flex-col justify-center items-center">
       <div className="card w-auto bg-[#e8e3ea] shadow-xl p-4 border-2 border-violet-900 my-16">
         <div class="flex justify-end pb-3">
-          <FaFileDownload
-            className="h-6 w-6 cursor-pointer"
-            title="Download PDF"
-          ></FaFileDownload>
+          <Pdf targetRef={ref} filename="code-example.pdf">
+            {({ toPdf }) => (
+              <FaFileDownload
+                onClick={toPdf}
+                className="h-6 w-6 cursor-pointer"
+                title="Download PDF"
+              ></FaFileDownload>
+            )}
+          </Pdf>
         </div>
         <figure>
           <img src={course_image} alt="..." />
         </figure>
-        <div className="card-body p-0 pt-6">
+        <div ref={ref} className="card-body p-0 pt-6">
           <h2 className="card-title pb-2 text-2xl font-semibold text-pink-900">
             {course_title}
           </h2>
