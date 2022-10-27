@@ -1,4 +1,4 @@
-import { GoogleAuthProvider } from "firebase/auth";
+import { GithubAuthProvider, GoogleAuthProvider } from "firebase/auth";
 import React from "react";
 import { useState } from "react";
 import { useContext } from "react";
@@ -14,11 +14,25 @@ const Login = () => {
   //error
   const [error, setError] = useState("");
 
-  //google sign in
+  //google provider
   const googleProvider = new GoogleAuthProvider();
 
+  //github provider
+  const gitHubProvider = new GithubAuthProvider();
+
+  //google login
   const handleGoogleSignIn = () => {
     providerLogin(googleProvider)
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
+      })
+      .catch((error) => console.error(error));
+  };
+
+  //github login
+  const handleGitHubSignIn = () => {
+    providerLogin(gitHubProvider)
       .then((result) => {
         const user = result.user;
         console.log(user);
@@ -112,7 +126,10 @@ const Login = () => {
                   <FaGoogle className="mr-2"></FaGoogle>
                   <h2>Google</h2>
                 </button>
-                <button className="btn font-normal text-base text-white bg-transparent border-2 rounded-md border-purple-400 hover:text-white hover:bg-fuchsia-900 hover:border-2 lg:w-full w-auto px-5 py-2.5 text-center normal-case">
+                <button
+                  onClick={handleGitHubSignIn}
+                  className="btn font-normal text-base text-white bg-transparent border-2 rounded-md border-purple-400 hover:text-white hover:bg-fuchsia-900 hover:border-2 lg:w-full w-auto px-5 py-2.5 text-center normal-case"
+                >
                   <FaGithub className="mr-2"></FaGithub>
                   Github
                 </button>
