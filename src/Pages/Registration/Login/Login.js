@@ -2,11 +2,15 @@ import { GoogleAuthProvider } from "firebase/auth";
 import React from "react";
 import { useContext } from "react";
 import { FaGithub, FaGoogle } from "react-icons/fa";
+import { Navigate, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../Contexts/AuthProvider/AuthProvider";
 import "../Register/Register.css";
 
 const Login = () => {
-  const { providerLogin } = useContext(AuthContext);
+  const { providerLogin, signIn } = useContext(AuthContext);
+  //navigate
+  const navigate = useNavigate();
+  //error
 
   //google sign in
   const googleProvider = new GoogleAuthProvider();
@@ -16,6 +20,22 @@ const Login = () => {
       .then((result) => {
         const user = result.user;
         console.log(user);
+      })
+      .catch((error) => console.error(error));
+  };
+
+  //email password sign in
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const form = event.target;
+    const email = form.email.value;
+    const password = form.password.value;
+    signIn(email, password)
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
+        form.reset();
+        navigate("/");
       })
       .catch((error) => console.error(error));
   };
@@ -30,7 +50,7 @@ const Login = () => {
           {/* form card  */}
           <div className=" card w-80 lg:w-96 bg-inherit border-2 shadow-2xl shadow-indigo-500/80">
             <div className="card-body">
-              <form className="flex flex-col">
+              <form onSubmit={handleSubmit} className="flex flex-col">
                 <div className="mb-6">
                   <label
                     for="email"

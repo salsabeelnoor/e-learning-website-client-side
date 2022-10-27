@@ -1,8 +1,12 @@
 import React from "react";
+import { useContext } from "react";
+import { AuthContext } from "../../../Contexts/AuthProvider/AuthProvider";
 // import book_img from "../../../assets/images/book_pic.jpg";
 import "./Register.css";
 
 const Register = () => {
+  const { createUser } = useContext(AuthContext);
+
   const handleSubmit = (event) => {
     event.preventDefault();
     const form = event.target;
@@ -11,6 +15,13 @@ const Register = () => {
     const email = form.email.value;
     const password = form.password.value;
     console.log(name, photoURL, email, password);
+
+    createUser(email, password)
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
+      })
+      .catch((error) => console.error(error));
   };
 
   return (
@@ -53,7 +64,6 @@ const Register = () => {
                   name="photoURL"
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                   placeholder="Your PhotoURL"
-                  required
                 />
               </div>
               <div className="mb-6">
