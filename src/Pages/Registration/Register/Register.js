@@ -3,6 +3,16 @@ import React from "react";
 import "./Register.css";
 
 const Register = () => {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const form = event.target;
+    const name = form.name.value;
+    const photoURL = form.email.value;
+    const email = form.email.value;
+    const password = form.password.value;
+    console.log(name, photoURL, email, password);
+  };
+
   return (
     <div className="reg-container">
       <div className="bgImage w-full lg:min-h-[800px] min-h-[800px] flex flex-col justify-center items-center">
@@ -13,11 +23,11 @@ const Register = () => {
         {/* form card  */}
         <div className=" card lg:w-[500px] w-80 bg-inherit border-2 shadow-2xl shadow-indigo-500/80">
           <div className="card-body">
-            <form>
-              <div class="mb-6">
+            <form onSubmit={handleSubmit}>
+              <div className="mb-6">
                 <label
                   for="name"
-                  class="block mb-2 text-base font-medium text-gray-200"
+                  className="block mb-2 text-base font-medium text-gray-200"
                 >
                   Your Name
                 </label>
@@ -25,15 +35,15 @@ const Register = () => {
                   type="text"
                   id="name"
                   name="name"
-                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                   placeholder="Your Name"
                   required
                 />
               </div>
-              <div class="mb-6">
+              <div className="mb-6">
                 <label
                   for="photoURL"
-                  class="block mb-2 text-base font-medium text-gray-200"
+                  className="block mb-2 text-base font-medium text-gray-200"
                 >
                   Your PhotoURL
                 </label>
@@ -41,15 +51,15 @@ const Register = () => {
                   type="text"
                   id="photoURL"
                   name="photoURL"
-                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                   placeholder="Your PhotoURL"
                   required
                 />
               </div>
-              <div class="mb-6">
+              <div className="mb-6">
                 <label
                   for="email"
-                  class="block mb-2 text-base font-medium text-gray-200"
+                  className="block mb-2 text-base font-medium text-gray-200"
                 >
                   Your email
                 </label>
@@ -57,15 +67,15 @@ const Register = () => {
                   type="email"
                   id="email"
                   name="email"
-                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                   placeholder="Your email address"
                   required
                 />
               </div>
-              <div class="mb-6">
+              <div className="mb-6">
                 <label
                   for="password"
-                  class="block mb-2 text-base font-medium text-gray-200"
+                  className="block mb-2 text-base font-medium text-gray-200"
                 >
                   Your password
                 </label>
@@ -73,14 +83,14 @@ const Register = () => {
                   type="password"
                   id="password"
                   name="password"
-                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
                   placeholder="Your Password"
                   required
                 />
               </div>
               <button
                 type="submit"
-                class="btn font-normal text-base normal-case text-white bg-transparent border-2 rounded-md border-purple-400 hover:text-white hover:bg-fuchsia-900 hover:border-2 w-full px-5 py-2.5 text-center"
+                className="btn font-normal text-base normal-case text-white bg-transparent border-2 rounded-md border-purple-400 hover:text-white hover:bg-fuchsia-900 hover:border-2 w-full px-5 py-2.5 text-center"
               >
                 Submit
               </button>

@@ -1,11 +1,19 @@
 import React from "react";
 import { useContext } from "react";
+import { FaUser } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import logo from "../../../assets/images/e-symbol.png";
 import { AuthContext } from "../../../Contexts/AuthProvider/AuthProvider";
 
 const Header = () => {
-  const { user } = useContext(AuthContext);
+  const { user, logOut } = useContext(AuthContext);
+
+  //logOut
+  const handleLogOut = () => {
+    logOut()
+      .then(() => {})
+      .catch((error) => console.error(error));
+  };
   return (
     <div className="bg-[#b47bc3]">
       <div className="navbar px-10">
@@ -115,28 +123,52 @@ const Header = () => {
                 </Link>
               </li>
               <li>
-                <h2></h2>
+                <h2>
+                  {user?.uid ? (
+                    <>
+                      <span>{user?.displayName}</span>
+                      <Link
+                        onClick={handleLogOut}
+                        to="/"
+                        className="btn modal-button hidden lg:flex mr-2 bg-transparent border-2 border-purple-900 text-black hover:text-white hover:bg-fuchsia-900 hover:border-2"
+                      >
+                        Log out
+                      </Link>
+                    </>
+                  ) : (
+                    <>
+                      <Link
+                        to="/login"
+                        className="btn modal-button hidden lg:flex mr-2 bg-transparent border-2 border-purple-900 text-black hover:text-white hover:bg-fuchsia-900 hover:border-2"
+                      >
+                        Log in
+                      </Link>
+
+                      <Link
+                        to="/register"
+                        className="btn hidden lg:flex mr-2 bg-transparent border-2 border-purple-900 text-black hover:text-white hover:bg-fuchsia-900 hover:border-2 hover:mr-2"
+                      >
+                        Register
+                      </Link>
+                    </>
+                  )}
+                </h2>
               </li>
             </ul>
           </div>
-          <Link
-            to="/login"
-            htmlFor="my-modal"
-            className="btn modal-button hidden lg:flex mr-2 bg-transparent border-2 border-purple-900 text-black hover:text-white hover:bg-fuchsia-900 hover:border-0"
-          >
-            Log in
-          </Link>
 
-          <Link
-            to="/register"
-            className="btn hidden lg:flex mr-2 bg-transparent border-2 border-purple-900 text-black hover:text-white hover:bg-fuchsia-900 hover:border-0 hover:mr-2"
-          >
-            Register
-          </Link>
           <div className="dropdown dropdown-end">
             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-              <div className="w-10 rounded-full">
-                <img src="https://placeimg.com/80/80/people" />
+              <div className="">
+                {user?.photoURL ? (
+                  <img
+                    className="w-10 rounded-full"
+                    src={user?.photoURL}
+                    alt=""
+                  />
+                ) : (
+                  <FaUser></FaUser>
+                )}
               </div>
             </label>
             <ul

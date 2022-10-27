@@ -14,12 +14,10 @@ module.exports = {
     themes: [
       {
         qctheme: {
-          primary: "#59f5ea",
           secondary: "#f6d860",
           accent: "#37cdbe",
           neutral: "#3d4451",
           "base-100": "#ffffff",
-          "nav-bg": "#67bef0",
         },
       },
     ],
