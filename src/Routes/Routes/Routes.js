@@ -8,6 +8,7 @@ import Home from "../../Pages/Home/Home";
 import Courses from "../../Pages/Courses/Courses/Courses";
 import CourseDetails from "../../Pages/Courses/CourseDetails/CourseDetails";
 import Register from "../../Pages/Registration/Register/Register";
+import Login from "../../Pages/Registration/Login/Login";
 
 export const routes = createBrowserRouter([
   {
@@ -41,6 +42,10 @@ export const routes = createBrowserRouter([
       {
         path: "/register",
         element: <Register></Register>,
+      },
+      {
+        path: "/login",
+        element: <Login></Login>,
       },
     ],
   },

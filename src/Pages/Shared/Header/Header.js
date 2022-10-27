@@ -1,8 +1,11 @@
 import React from "react";
+import { useContext } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../../assets/images/e-symbol.png";
+import { AuthContext } from "../../../Contexts/AuthProvider/AuthProvider";
 
 const Header = () => {
+  const { user } = useContext(AuthContext);
   return (
     <div className="bg-[#b47bc3]">
       <div className="navbar px-10">
@@ -49,12 +52,18 @@ const Header = () => {
                 </Link>
               </li>
               <li>
-                <Link className="btn flex lg:hidden bg-transparent border-2 border-purple-900 text-black hover:text-white hover:bg-fuchsia-900 hover:border-0 mb-2">
+                <Link
+                  to="/login"
+                  className="btn flex lg:hidden bg-transparent border-2 border-purple-900 text-black hover:text-white hover:bg-fuchsia-900 hover:border-2 mb-2"
+                >
                   Log in
                 </Link>
               </li>
               <li>
-                <Link className="btn flex lg:hidden bg-transparent border-2 border-purple-900 text-black hover:text-white hover:bg-fuchsia-900 hover:border-0 hover:mr-2">
+                <Link
+                  to="/register"
+                  className="btn flex lg:hidden bg-transparent border-2 border-purple-900 text-black hover:text-white hover:bg-fuchsia-900 hover:border-2 hover:mr-2"
+                >
                   Register
                 </Link>
               </li>
@@ -105,9 +114,13 @@ const Header = () => {
                   Blog
                 </Link>
               </li>
+              <li>
+                <h2></h2>
+              </li>
             </ul>
           </div>
           <Link
+            to="/login"
             htmlFor="my-modal"
             className="btn modal-button hidden lg:flex mr-2 bg-transparent border-2 border-purple-900 text-black hover:text-white hover:bg-fuchsia-900 hover:border-0"
           >
