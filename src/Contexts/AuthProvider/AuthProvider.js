@@ -20,7 +20,7 @@ const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
 
-  //google Login
+  //google & github Login
   const providerLogin = (provider) => {
     setLoading(true);
     return signInWithPopup(auth, provider);
